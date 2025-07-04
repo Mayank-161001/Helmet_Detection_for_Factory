@@ -52,3 +52,11 @@ def trigger_alarm(camera_id, cooldown, use_wifi=False, esp_ip=None):
                          args=(True, use_wifi, esp_ip),
                          daemon=True).start()
         last_sent_time[camera_id] = now
+
+
+def close_serial():
+    global ser
+    if ser and ser.is_open:
+        print("[USB] Closing serial port...")
+        ser.close()
+        time.sleep(0.5)  # Let OS release the device

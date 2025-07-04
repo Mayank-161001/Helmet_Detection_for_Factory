@@ -2,7 +2,7 @@ model_path: weights/helmet_model.pt
 class_file: data/class_names.yaml
 
 camera_feeds:
-  - rtsp://admin:hikVision123@169.254.89.249:554/Streaming/Channels/101
+  - rtsp://admin:hikVision123@169.254.89.250:554/Streaming/Channels/101
 
 confidence_threshold: 0.25
 alarm_cooldown_sec: 10

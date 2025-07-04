@@ -1,4 +1,5 @@
 import threading
+import atexit
 import yaml
 from detector import load_class_names, load_model
 from camera_worker import process_camera
@@ -7,6 +8,14 @@ from camera_worker import process_camera
 def load_config(path='config.yaml'):
     with open(path, 'r') as f:
         return yaml.safe_load(f)
+    
+
+def cleanup_all():
+    print("[EXIT] Cleaning up resources...")
+    try:
+        cv2.destroyAllWindows()  # Close OpenCV windows
+    except Exception as e:
+        print(f"[EXIT] cv2 error: {e}")
 
 
 def main():
