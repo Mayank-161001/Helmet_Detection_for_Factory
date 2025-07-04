@@ -1,0 +1,14 @@
+model_path: weights/helmet_model.pt
+class_file: data/class_names.yaml
+
+camera_feeds:
+  - rtsp://admin:hikVision123@169.254.89.249:554/Streaming/Channels/101
+
+confidence_threshold: 0.25
+alarm_cooldown_sec: 10
+
+# Set to true to send buzzer commands over WiFi HTTP instead of USB serial
+use_wifi: false
+
+# ESP32 IP address for WiFi buzzer control (ignored if use_wifi is false)
+esp_ip: 192.168.45.193
