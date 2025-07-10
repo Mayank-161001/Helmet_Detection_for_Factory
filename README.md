@@ -6,19 +6,37 @@ This project is a real-time helmet detection system using YOLOv8. It processes m
 
 ## 📁 Project Structure
 
-Helmet_Detection_IP/
-│
-├── multi_camera_main.py              # Main runner file
-├── gui.py               # Tkinter GUI to manage cameras
-├── detector.py          # YOLO model loader and prediction logic
-├── camera_worker.py     # RTSP camera stream capture using threads
-├── alarm.py             # USB and Wi-Fi communication with buzzer (ESP32)
-├── config.yaml          # Configuration file for model and camera settings
-├── requirements.txt     # Python package dependencies
+Helmet_Detection_IP/<br>
+│<br>
+├── multi_camera_main.py           # Main runner file<br>
+├── gui.py               # Tkinter GUI to manage cameras<br>
+├── detector.py          # YOLO model loader and prediction logic<br>
+├── camera_worker.py     # RTSP camera stream capture using threads<br>
+├── alarm.py             # USB and Wi-Fi communication with buzzer (ESP32)<br>
+├── config.yaml          # Configuration file for model and camera settings<br>
+├── requirements.txt     # Python package dependencies<br>
 
 ## 🔧 Setup Instructions
+
 1. Clone the Repository
 
-'''git clone https://github.com/your-repo/helmet-detection.git
-cd helmet-detection'''
+```javascript 
+git clone https://github.com/Mayank-161001/Helmet_Detection_for_Factory.git
+```
+
+2. Create and Activate Virtual Environment
+
+3. Install Required Dependencies
+```javascript
+pip install -r requirements.txt
+```
+4.🔌 USB Serial Port Detection
+```javascript
+sudo dmesg | grep tty
+```
+#✅ To install tkinter on your system (Linux):
+```javascript
+sudo apt-get install python3-tk
+```
+
 
