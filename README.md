@@ -16,4 +16,9 @@ Helmet_Detection_IP/
 ├── config.yaml          # Configuration file for model and camera settings
 ├── requirements.txt     # Python package dependencies
 
+## 🔧 Setup Instructions
+1. Clone the Repository
+
+'''git clone https://github.com/your-repo/helmet-detection.git
+cd helmet-detection'''
 
