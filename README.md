@@ -34,7 +34,7 @@ pip install -r requirements.txt
 ```javascript
 sudo dmesg | grep tty
 ```
-#✅ To install tkinter on your system (Linux):
+##✅ To install tkinter on your system :
 ```javascript
 sudo apt-get install python3-tk
 ```
