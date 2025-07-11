@@ -32,7 +32,6 @@ def display_frames():
     while True:
         with lock:
             for cam_id, frame in frame_dict.items():
-                
                 cv2.imshow(f"Camera {cam_id}", frame)
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
